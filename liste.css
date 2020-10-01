@@ -1,14 +1,78 @@
+body{
+  margin: 0px;
+}
+main{
+  margin:5% ;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
 header{
+  border-style:hidden ;
   background-image: url(deco3.jpg) ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'cursivebold';
+  font-size: 30px;
+}
+@font-face {
+  font-family: 'cursivebold';
+  src: url( 'cursivebold.ttf' );
+  }
+@font-face {
+  font-family:'cursive';
+  src: url( 'cursive.ttf');
+}
+
+h1{
+  align-items: center;
+
+  
+}
+
+#presentation{
+  font-family: 'cursive';
 }
 table {
     border-collapse: collapse;
   }
   
-  table, th, td {
+table, th, td {
     border: 1px solid black;
   }
-  th, td {
+th, td {
     padding: 15px;
     text-align: left;
+  }
+
+.categorie{
+    background-color: rgb(178, 212, 243);
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+#lien{
+  
+  border: solid, 1px;
+  border-radius: 5px;
+  background-color:  rgb(178, 212, 243);  
+  padding: 2px;
+  margin: 5%;
+  width: 20%;
+  justify-items: center;
+  text-align: center;
+}
+#lien a{
+  text-decoration: none;
+  color: black;
+}
+
+footer{
+  border-style: none;
+  background-image: url("deco3.jpg") ;
+ font-family: 'cursive';
+ font-size: 25px;
+ padding: 10px;
   }
