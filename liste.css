@@ -3,7 +3,7 @@ body{
 }
 main{
   margin:5% ;
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   
@@ -34,7 +34,13 @@ h1{
 
 #presentation{
   font-family: 'cursive';
+  font-size: 24px;
 }
+
+#parents{
+  float: right;
+}
+
 table {
     border-collapse: collapse;
   }
@@ -53,9 +59,37 @@ th, td {
     font-weight: bolder;
   }
 
+ 
+/*Masquer les articles déjà acheté quand on survole avec la souris.*/
+.achete:hover{
+  opacity: 0;
+  border-style: none ;
+}
+
+/*Mettre en italique et flouter les articles déjà séléctionné quand on survole avec la souris.*/
+.selectionne:hover{
+  font-style: italic ;
+  opacity: 0.5;
+  border-style: none;
+}
+
+/*Encadrer en vert les articles disponibles*/
+.disponible:hover{
+  border:greenyellow solid 3px;
+  opacity:1 ;
+  font-style: normal;
+}
+
+/*Encadrer en rouge les articles disponibles et urgents*/
+.urgent:hover{
+  border: red solid 3px;
+  font-style: normal;
+  opacity: 1;
+}
+
 #lien{
   
-  border: solid, 1px;
+  border-style: none;
   border-radius: 5px;
   background-color:  rgb(178, 212, 243);  
   padding: 2px;
@@ -67,8 +101,12 @@ th, td {
 #lien a{
   text-decoration: none;
   color: black;
+ 
 }
-
+#lien a:hover{
+  transition: all 450ms; 
+  transform: scale(1.3);
+}
 footer{
   border-style: none;
   background-image: url("deco3.jpg") ;
