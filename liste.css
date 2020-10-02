@@ -1,5 +1,9 @@
 body{
+  height: 100%;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 main{
   margin:5% ;
@@ -13,10 +17,16 @@ header{
   background-image: url(deco3.jpg) ;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: 'cursivebold';
   font-size: 30px;
+  
 }
+
+#nounours{
+  width: 10%;
+}
+
 @font-face {
   font-family: 'cursivebold';
   src: url( 'cursivebold.ttf' );
@@ -26,10 +36,9 @@ header{
   src: url( 'cursive.ttf');
 }
 
-h1{
-  align-items: center;
-
-  
+h2{
+  font-family: 'cursive';
+  font-size: 30px;
 }
 
 #presentation{
@@ -95,9 +104,9 @@ th, td {
   padding: 2px;
   margin: 5%;
   width: 20%;
-  justify-items: center;
   text-align: center;
 }
+
 #lien a{
   text-decoration: none;
   color: black;
@@ -114,3 +123,45 @@ footer{
  font-size: 25px;
  padding: 10px;
   }
+
+
+/* css pour la page formulaire.html */
+#photo{
+  margin-top: 5%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-image: url("bebe.jpg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+ }
+.formulaire{
+  color:black;
+  justify-content: center;
+}
+form{
+  margin: 5% auto;
+  
+  width: 500px;
+  padding:1em;
+  border: 1px solid #CCC;
+  border-radius: 1em; 
+     
+}
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+label {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+textarea {
+  height: 100px;
+}
