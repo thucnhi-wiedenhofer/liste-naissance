@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="liste.css">
+    <title>formulaire</title>
+</head>
+<body>
+    <header>
+        <h1>Liste de naissance de Léo</h1>
+    </header> 
+    <main id="photo">
+        
+        <section id="formulaire">
+        <h2>Formulaire à remplir</h2>
+            <!-- le bouton envoyer renvoie à la liste.html -->
+            <form action="liste.html">
+                <fieldset>
+                    <legend>Contact</legend>
+                      <label for="nom">Nom </label><input id="nom"><br>
+                      <label for="telephone">Portable</label><input id="telephone" type="tel"><br>
+                      <label for="email">Email</label><input id="email" type="email"><br>
+                      
+                </fieldset>
+                <br/>
+                <fieldset>
+                    <legend>Votre cadeau</legend>
+                    <label for="cadeau">Le cadeau que vous avez choisi pour Léo:</label>
+                      <select id="cadeau">
+                      <option disabled value="Porte-bébé gris" name="cadeau">Porte-bébé gris</option>
+                      <option value="Siège auto" name="cadeau">Siège auto</option>
+                      <option value="Poussette et nacelle" name="cadeau">Poussette et nacelle</option>
+                      <option disabled value="Gigoteuse" name="cadeau">Gigoteuse</option>
+                      <option value="Veilleuse musicale évolutive" name="cadeau">Veilleuse musicale évolutive</option>
+                      <option value="Babycook Grey/Blue de Béaba" name="cadeau">Babycook Grey/Blue de Béaba</option>
+                      <option disabled value="Chaise haute" name="cadeau">Chaise haute</option>
+                      <option value="Tapis d'éveil" name="cadeau">Tapis d'éveil</option>
+                      <option disabled value="Arche d'activités" name="cadeau">Arche d'activités</option>
+                      </select><br>
+                      <label for="message">Ecrivez nous un message:</label><textarea id="message"></textarea>
+                </fieldset>
+                <button>Envoyer</button>
+            </form>   
+
+
+        </section>
+    </main>   
+    <footer>
+        <p>Un immense merci pour toutes vos belles attentions!</p>
+    </footer>   
+</body>
+</html>

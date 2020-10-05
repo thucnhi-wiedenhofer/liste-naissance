@@ -14,7 +14,7 @@ main{
 }
 header{
   border-style:hidden ;
-  background-image: url(deco3.jpg) ;
+  background-image: url(images/deco3.jpg) ;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -118,7 +118,7 @@ th, td {
 }
 footer{
   border-style: none;
-  background-image: url("deco3.jpg") ;
+  background-image: url("images/deco3.jpg") ;
  font-family: 'cursive';
  font-size: 25px;
  text-align: center;
@@ -129,7 +129,7 @@ footer{
 /* css pour la page formulaire.html */
 #photo{
   margin: 0px;
-  background-image: url("bebe.png");
+  background-image: url("images/bebe.png");
   background-repeat: no-repeat;
   background-size: cover;
   
